@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(14, 16, 26);
+    padding: 20px 50px;
+    width: 100%;
+    overflow: hidden;
+}
+header h1 {
+    font-size: clamp(2.5rem, 3vw, 3rem);
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+main {
+    display: flex;
+    width: 90vw;
+    margin: 20px;
+}
+.hero:nth-child(1) {
+     background-image: url(./images/kashmir.png);
+}
+.hero:nth-child(2) {
+    background-image: url(./images/rajasthan.jpg);
+}
+.hero:nth-child(3) {
+    background-image: url(./images/goa.avif);
+}
+.hero:nth-child(4) {
+    background-image: url(./images/uttarkhand.jpg);
+}
+.hero:nth-child(5) {
+    background-image: url(./images/punjab.jpg);
+}
+.hero:nth-child(6) {
+    background-image: url(./images/Dal-Lake-Srinagar.webp);
+}
+.hero:nth-child(7) {
+    background-image: url(./images/gujarat.jpg);
+}
+.hero:nth-child(8) {
+    background-image: url(./images/himchal-pradesh.jpg);
+}
+.hero:nth-child(9) {
+    background-image: url(./images/karnataka.webp);
+}
+.hero:nth-child(10) {
+    background-image: url(./images/Kerala.webp);
+}
+.hero:nth-child(11) {
+    background-image: url(./images/maharashtra.jpg);
+}
+.hero:nth-child(12) {
+    background-image: url(./images/madhya-pradesh.jpg);
+}
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    flex: 0.5;
+    transition: flex 0.5s linear;
+}
+.hero h1 {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+}
+.hero.active {
+    flex: 5;
+}
+.hero.active h1 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in0.4s;
+}
+@media (max-width:1000px) {
+    .hero:nth-child(7),
+    .hero:nth-child(8),
+    .hero:nth-child(9),
+    .hero:nth-child(10),
+    .hero:nth-child(11) {
+        display: none;
+    }   
+}
+@media (max-width:650px) {
+    .hero:nth-child(4),
+    .hero:nth-child(5),
+    .hero:nth-child(6),
+    .hero:nth-child(7),
+    .hero:nth-child(8),
+    .hero:nth-child(9),
+    .hero:nth-child(10),
+    .hero:nth-child(11),
+    .hero:nth-child(12) {
+        display: none;
+    }   
+}
