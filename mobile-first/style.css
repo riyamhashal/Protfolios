@@ -1,0 +1,105 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+}
+section {
+    height: 1020px;
+    width: 480px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    overflow-y: hidden;
+    &:hover {
+        overflow: scroll;
+    }
+}
+header {
+    padding: 30px;
+    padding-top: 45px;
+    padding-bottom: 0px;
+}
+.menu {
+    background-color: #f7f7f7;
+    padding: 0.5em;
+    padding-top: 1em;
+    padding-right: 1em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+main {
+    background-color: #f7f7f7;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    min-height: 100px;
+    padding-top: 10px;
+}
+.buttons {
+    display: flex;
+    padding: 10px;
+}
+.button {
+    flex: 1;
+    height: 110px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2PX 0PX 20PX rgb(#C8C5CB, 16%);
+}
+.hospitals {
+    padding: 15px;
+    padding-top: 30px;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3E3049;
+    margin-bottom: 20px;
+}
+.hospital {
+     display: flex;
+     background-color: white;
+     padding: 15px;
+     border-radius: 10px;
+     margin-bottom: 10px;
+} 
+.hospital-alt .beds{
+    color: #F79A1C;
+} 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: #F79A1C;
+}
+.logo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: #7358d4;
+}
+.info {
+    flex: 1;
+}
+.title {
+   font-weight: bold;
+}
+.location {
+   color: #665E77;
+}
+.beds {
+    color: #7358d4;
+}
+.bed {
+    color: #F79A1C;
+}
